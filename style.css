@@ -1,11 +1,29 @@
-.navbar{
+/*body*/
+.body-margin{
+margin:70px;
+}
+h2{
+	text-align: center;
+	margin:45px;
+}
+.flex-colomn{
+	display:flex;
+	flex-direction: column;
+}
+.flex-center{
+	display:flex;
+	justify-content: center;
+}
+.flex-between{
 	display:flex;
 	justify-content: space-between;
 }
-
-
-
-
+/*nav*/
+.navbar{
+	display:flex;
+	justify-content: space-between;
+	margin:45px;
+}
 ul{
 	display:flex;
 	list-style-type: none;
@@ -15,5 +33,57 @@ margin-right: 30px;
 }
 a{
 	text-decoration: none;
-	color:green;
+}
+
+/*article product*/
+.flex-around{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.card{
+	margin:30px;
+}
+/*content*/
+.content{
+	width:100%;
+	}
+.content-banners{
+	background-image: url("https://img.freepik.com/vecteurs-libre/fond-concept-futur-technologie-cyber-circuit-vert_42077-2873.jpg?size=626&ext=jpg");
+  background-repeat: no-repeat;
+  opacity:0.8;
+  width:100%;
+  height: 400px;
+  background-size: 100%;
+  padding: 0;
+}
+/*new*/
+.new-center{
+text-align: justify;
+margin:auto;
+}
+iframe{
+	margin:auto;
+	max-width: 150px;
+	max-height: 150px
+}
+form{
+	padding:30px;
+	background-image:url("https://img.freepik.com/vecteurs-libre/fond-concept-futur-technologie-cyber-circuit-vert_42077-2873.jpg?size=626&ext=jpg");
+	opacity:0.8;
+	color:white;
+}
+.flex-colomn{
+	display:flex;
+	flex-direction: column;
+}
+/*footer*/
+footer{
+	margin-top: 45px;
+	background-color: green;
+	width:100%;
+	height: 100%;
+}
+.icone{
+	margin:20px;
 }
