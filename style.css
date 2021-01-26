@@ -1,10 +1,11 @@
 /*body*/
-.body-margin{
-margin:70px;
+body{
+	padding: 0;
+	margin:0;
 }
 h2{
 	text-align: center;
-	margin:45px;
+	margin:65px;
 }
 .flex-colomn{
 	display:flex;
@@ -18,11 +19,31 @@ h2{
 	display:flex;
 	justify-content: space-between;
 }
+
 /*nav*/
 .navbar{
 	display:flex;
 	justify-content: space-between;
-	margin:45px;
+	flex-wrap: wrap;
+	width:100%;
+	text-align: center;
+	height:300px;
+}
+.navbar-links{
+	display:flex;
+	justify-content: space-around;
+	width:20%;
+}
+.navbar-logo{
+	text-align: center;
+	width:60%;
+}
+button{
+	background-color:#299a0b;
+	color:white;
+	border-radius: 6px;
+	border: 3px #299a0b solid;
+	box-shadow: 6px 6px 6px #A9A9A9 ;
 }
 ul{
 	display:flex;
@@ -35,6 +56,33 @@ a{
 	text-decoration: none;
 }
 
+/*history*/
+#History p 
+{
+    text-align: center;
+    padding:20px;
+}
+
+.service-container
+{
+    display:flex;
+    height: 100px;
+    justify-content: space-around;
+    margin-bottom: 200px;
+
+}
+
+.service-card
+{
+    height: 50px;
+    margin-top:50px;
+}
+
+.service-img
+{
+    height: 100px;
+}
+
 /*article product*/
 .flex-around{
 	display:flex;
@@ -44,46 +92,69 @@ a{
 .card{
 	margin:30px;
 }
+.card-img-top{
+	background-color: grey;
+}
+
 /*content*/
 .content{
 	width:100%;
 	}
 .content-banners{
-	background-image: url("https://img.freepik.com/vecteurs-libre/fond-concept-futur-technologie-cyber-circuit-vert_42077-2873.jpg?size=626&ext=jpg");
+	background-image: url("img/robotic-nature-hands-adobestock.jpg");
   background-repeat: no-repeat;
-  opacity:0.8;
-  width:100%;
-  height: 400px;
+  opacity:0.9;
+  width: 100%;
+  height: auto;
   background-size: 100%;
   padding: 0;
+
 }
+.content-slogan{
+	padding: 200px;
+	text-align: center;
+}
+
 /*new*/
 .new-center{
 text-align: justify;
 margin:auto;
+ line-height: 5px;
 }
 iframe{
 	margin:auto;
-	max-width: 150px;
-	max-height: 150px
+	max-width: 250px;
+	max-height: 250px
 }
 form{
 	padding:30px;
-	background-image:url("https://img.freepik.com/vecteurs-libre/fond-concept-futur-technologie-cyber-circuit-vert_42077-2873.jpg?size=626&ext=jpg");
+	background-image:url("https://mouton-numerique.org/wp-content/uploads/2014/09/fond-gris.png");
+	border: 3px #A9A9A9 solid;
+	box-shadow: 6px 6px 6px #A9A9A9 ;
 	opacity:0.8;
-	color:white;
 }
-.flex-colomn{
-	display:flex;
-	flex-direction: column;
+/*services*/
+.services{
+	margin-bottom: 75px;
 }
+
 /*footer*/
 footer{
-	margin-top: 45px;
-	background-color: green;
+	padding: 45px;
+	background-color: #299a0b;
 	width:100%;
-	height: 100%;
+	height: 150px;
 }
 .icone{
-	margin:20px;
+	display: flex;
+	justify-content: space-between;
+	margin:10px;
+	color:white;
+	
+}
+.icone2{
+	height:10%;
+}
+i{
+	font-size: 20px;
 }
