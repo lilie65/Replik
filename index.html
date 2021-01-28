@@ -6,8 +6,7 @@
 	<!--bootstrap-->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 	<!--google font-->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;600;700&display=swap" rel="stylesheet">
 	<!--fontawesome-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<!--css-->
@@ -16,15 +15,27 @@
 	<title>Replik'</title>
 </head>
 <body>
-	<div class="body-margin">
-		<nav class="navbar flex-between">
-			<a class="navbar-logo" href="index.html"><img src="img/replik.png"></a>
-			<div class="navbar-links">
-				<a href="#History"><button type="button">Nos produits</button>
-					<a href="#history"><button type="button" autocomplete="off" aria-pressed="true">Histoire</button></a>
-					<a href="#contact"><button type="button" >contact</button></a>
-				</div>
-			</nav>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="img/replik.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#histoire">Notre histoire</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#articles">Nos produits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contactez-nous</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 			<section>
 				<!--History content-->
 				<content class="content">
@@ -37,123 +48,108 @@
 					</div>
 				</content>
 				<article id="History">
-
             <h2> Histoire </h2>
-
-            <p> Replik' est fondée le 11 janvier 2036, par Constance Designeuse UX/UI, autodidacte de génie dans l'entrepreneuriat, et visionnaire et Yoko, ingénieure en électronique experte en développement IA.</p>
-
+           <p> Replik' est fondée le 11 janvier 2036, par Constance Designeuse UX/UI, autodidacte dans l'entrepreneuriat, visionnaire et Yoko, ingénieure en électronique experte en développement IA.
+            Toutes deux philanthropes, engagées sur des technologies à bas niveau d'émission de carbone, elles veulent révolutionner l'univers de la robotique.</p>
+            <p>Ensemble elles se spécialisent en mécatronique, une démarche visant l’intégration en synergie de la mécanique, l’électronique, l’automatique et l’informatique dans le but de concevoir et de fabriquer le premier robot humanoïde doté d'une conscience.</p>
         </article>
-
+<article>
         <div class="service-container">
 
             <div class="service-card">
-                <img src="img/Ecologie.jpg" alt="Ecologie" class="service-img">
-                <p> Ecologie </p>
+                <img src="https://www.lepetitjuriste.fr/wp-content/uploads/2015/12/shutterstock_203029825.jpg" alt="Ecologie" class="service-img">
+                <h3> Ecologie </h3>
 
             </div>
 
             <div class="service-card">
-                <img src="img/Assistanat.jpg" alt="Assistanat" class="service-img">
-                <p> Assistanat </p>
+                <img src="https://th.bing.com/th/id/R1f815360945fc4d1fa87837cb63105b9?rik=oM2htVD%2f%2bPuj6Q&riu=http%3a%2f%2fwww.mbamci.com%2fwp-content%2fuploads%2f2016%2f11%2frobot-plantes.jpg&ehk=cIaeZXf6xsUo3tbnSMmDg1k11LcQcPs%2fciv5vZEQ0jI%3d&risl=&pid=ImgRaw" alt="Assistanat" class="service-img">
+                <h3> Assistance </h3>
 
             </div>
 
             <div class="service-card">
-                <img src="img/Ecologie.jpg" alt="Innovation" class="service-img" >
-                <p> Innovation </p>
+               <a href="https://images.idgesg.net/images/article/2019/08/itil-tips-for-implementation_lightbulb_innovation_process_strategy_iot_by-ipopba-getty-100808462-large.jpg"> <img src="https://images.idgesg.net/images/article/2019/08/itil-tips-for-implementation_lightbulb_innovation_process_strategy_iot_by-ipopba-getty-100808462-large.jpg" alt="Innovation" class="service-img" ></a>
+                <h3> Innovation </h3>
 
             </div>
 
         </div>
+    </article>
 				<!--products-->
-				<article id="articles">
+				<article id="articles" class="container">
 					<h2>Nos articles</h2>
-					<div class="flex-around">
-						<div class="card" style="width: 18rem;">
-							<img src="https://miro.medium.com/max/810/0*-1JZmBvx3DZxBR1o.jpg" class="card-img-top" alt="...">
+					<div class="row">
+						<div class="col-12 col-md-4">
+						<div class="card" >
+							<img src="https://miro.medium.com/max/810/0*-1JZmBvx3DZxBR1o.jpg" class="card-img-top" alt="Wall-e">
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								<a href="#" class="btn btn-primary">Go somewhere</a>
+								<h5 class="card-title">Akira</h5>
+								<p class="card-text"> Voici le robot frigo qui défie la gravité grâce à son système magnétique!  Votre robot pourra monté et descendre sur votre frigo et mettre les produits frais dans son ventre pour gardé les denrés au frais ! </p>
 							</div>
 						</div>
-						<div class="card" style="width: 18rem;">
-							<img src="https://geeko.lesoir.be/wp-content/uploads/sites/58/2017/07/r2d2.jpg" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								<a href="#" class="btn btn-primary">Go somewhere</a>
-							</div>
 						</div>
-					</div>
-					<div class="flex-around">
-						<div class="card" style="width: 18rem;">
-							<img src="img/leve-tout.jpg" class="card-img-top" alt="...">
+					<div class="col-12 col-md-4">
+						<div class="card">
+							<img src="https://geeko.lesoir.be/wp-content/uploads/sites/58/2017/07/r2d2.jpg" class="card-img-top" alt="r2d2">
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								<a href="#" class="btn btn-primary">Go somewhere</a>
-							</div>
-						</div><div class="card" style="width: 18rem;">
-							<img src="..." class="card-img-top" alt="...">
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								<a href="#" class="btn btn-primary">Go somewhere</a>
+								<h5 class="card-title">Yukio</h5>
+								<p class="card-text">Le robot à commandes vocales qui bouleverse le divertissement, la communication et la sécurité de votre maison ! Un écran géant et un puissant système audio qui se déplacent tout seuls, dans toutes les pièces de la maison, et même dehors </p>
 							</div>
 						</div>
 					</div>
-					<div class="flex-around">
-						<div class="card" style="width: 18rem;">
-							<img src="..." class="card-img-top" alt="...">
+					<div class="col-12 col-md-4">
+						<div class="card" >
+							<img src="img/leve-tout.jpg" class="card-img-top" alt="robot manutentionnaire">
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								<a href="#" class="btn btn-primary">Go somewhere</a>
+								<h5 class="card-title">Miki</h5>
+								<p class="card-text">miki peut porter des charges allant jusqu'à 135,5 kg du bout de son bras articulé doté d'une ventouse, et même manipuler des cartons jusqu'à 1,67 m de haut et 1,20 m de profondeur</p>
 							</div>
 						</div>
-						<div class="card" style="width: 18rem;">
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="card" >
+							<img src="img/echo.jpg" class="card-img-top" alt="Robot echologique">
+							<div class="card-body">
+								<h5 class="card-title">Akihiko</h5>
+								<p class="card-text">L’étude des êtres vivants, que ce soit les végétaux, les animaux ou l’être humain, implique de très nombreuses données, qu’il est impossible de traiter autrement que par une machine. Machine qui permet donc de simuler un véritable écosystème, de mieux le comprendre, de l’analyser et de l’améliorer.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="card" >
+							<img src="https://i.pinimg.com/originals/bd/a1/00/bda100c88296f631ba3ee55d2a9d655c.jpg" class="card-img-top" alt="Robot humanoide">
+							<div class="card-body">
+								<h5 class="card-title">Yoichi</h5>
+								<p class="card-text">Un système robotique utilisé dans le cadre d'une application thérapeutique, par exemple lors d'une chirurgie ou au cours d'un programme de réhabilitation neuromotrice</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="card" >
 							<img src="img/humanoide.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
 								<h5 class="card-title">Hope</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								<a href="#" class="btn btn-primary">Go somewhere</a>
+								<p class="card-text">Un acteur multi-spécialiste de l’assistance aux personnes et aux biens, organisé en 3 Unités Opérationnelles <br>-Assistance
+								aux personnes <br>-Assistance
+								automobile<br> -Services et solutions</p>
 							</div>
 						</div>
 					</div>
-
+				</div>
 				</article>
-				<article id="contact" class="news">
+				<article id="contact" >
 					<h2>A propos de nous</h2>
-					<div class="flex-around">
-						<form action="/ma-page-de-traitement" method="post">
-							<h2> contactez-nous</h2>
-							<div class="flex-colomn">
-								<label for="name">Nom :</label>
-								<input type="text" id="name" name="user_name" required="">
-							</div>
-							<div class="flex-colomn">
-								<label for="mail">e-mail :</label>
-								<input type="email" id="mail" name="user_mail">
-							</div>
-							<div class="flex-colomn">
-								<label for="msg">Message :</label>
-								<textarea id="msg" name="user_message"></textarea>
-							</div>
-						</form>
-						<div class="flex-around">
-							<div class="new-center">
-								<h3>Société Replik'</h3>
-								<p>2 rue Marc Sangnier</p>
-								<p>33130 - Bègles</p>
-								<p>replik@robotik.com</p>
-								<p>06.06.06.06.06</p>
-								</div>
-							</div>
-							<div class="flex-around">
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.4159963587686!2d-0.5561398842491777!3d44.813089184672044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd552657be03f165%3A0x227f5b4a4ee92db7!2s2%20Rue%20Marc%20Sangnier%2C%2033130%20B%C3%A8gles!5e0!3m2!1sfr!2sfr!4v1611497478428!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-						</div>
+						<div class="typeform-widget" data-url="https://form.typeform.com/to/XkEiItcx?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
 					</article>
+					<article class="news flex-around">
+								<div class="new-center">
+									<h3>Société Replik'</h3>
+									<p>2 rue Marc Sangnier,33130 - Bègles</p>
+									<p>Adresse mail : replik@robotik.com</p>
+									<p>Appelez-nous : 06.06.06.06.06</p>
+								</div>
+								<iframe  class="google"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.4159963587686!2d-0.5561398842491777!3d44.813089184672044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd552657be03f165%3A0x227f5b4a4ee92db7!2s2%20Rue%20Marc%20Sangnier%2C%2033130%20B%C3%A8gles!5e0!3m2!1sfr!2sfr!4v1611497478428!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>					</article>
 					<article class="service">
 						<a href="https://www.irobot.fr/"></a>
 					</article>

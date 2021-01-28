@@ -1,11 +1,26 @@
 /*body*/
 body{
+	font-family: 'Titillium Web', sans-serif;
 	padding: 0;
 	margin:0;
+} 
+.navbar{
+	display:flex;
+	justify-content: space-around;
 }
+h1{
+	text-align: center;
+	padding:65px;
+	max-height: 100px;
+	font-weight: 700;
+
+}
+
 h2{
 	text-align: center;
-	margin:65px;
+	font-weight: 600;
+	padding:70px;
+
 }
 .flex-colomn{
 	display:flex;
@@ -19,25 +34,32 @@ h2{
 	display:flex;
 	justify-content: space-between;
 }
+.flex-around{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
 
 /*nav*/
 .navbar{
-	display:flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
 	width:100%;
 	text-align: center;
 	height:300px;
 }
-.navbar-links{
-	display:flex;
-	justify-content: space-around;
-	width:20%;
+.navbar-collapse{
+display:flex;
+flex-direction: row-reverse;
 }
-.navbar-logo{
-	text-align: center;
-	width:60%;
+nav a{
+	font-size: 20px;
+	color:black;
+
 }
+nav li:hover {
+	border:1px solid black;
+	border-radius:26px;
+}
+
 button{
 	background-color:#299a0b;
 	color:white;
@@ -57,16 +79,16 @@ a{
 }
 
 /*history*/
-#History p 
-{
+#History p {
     text-align: center;
-    padding:20px;
+    padding:40px;
+    max-width:1000px;
+    margin: auto;
 }
 
 .service-container
 {
     display:flex;
-    height: 100px;
     justify-content: space-around;
     margin-bottom: 200px;
 
@@ -74,65 +96,72 @@ a{
 
 .service-card
 {
-    height: 50px;
-    margin-top:50px;
+	padding:100px;
 }
 
 .service-img
 {
-    height: 100px;
+    height: 300px;
+    width:300px;
+    border-radius:200px;
+}
+h3{
+	text-align: center;
 }
 
 /*article product*/
-.flex-around{
-	display:flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-}
 .card{
 	margin:30px;
+	max-width: 200px;
 }
 .card-img-top{
 	background-color: grey;
+	max-height: 400px;
+
 }
 
 /*content*/
 .content{
 	width:100%;
 	}
-.content-banners{
+.content-containers{
 	background-image: url("img/robotic-nature-hands-adobestock.jpg");
   background-repeat: no-repeat;
   opacity:0.9;
   width: 100%;
-  height: auto;
+  height: 500px;
   background-size: 100%;
   padding: 0;
 
+
 }
 .content-slogan{
-	padding: 200px;
-	text-align: center;
+	background color:grey;
+	 width:100%;
+	 height:100%;
 }
 
 /*new*/
+.news{
+	margin:75px;
+
+}
+.logos2{
+	background-image: url("img/R-vert.png");
+	background-size: 300px 300px;
+}
 .new-center{
 text-align: justify;
 margin:auto;
  line-height: 5px;
 }
-iframe{
+.google{
 	margin:auto;
-	max-width: 250px;
+	max-width: 550px;
 	max-height: 250px
 }
-form{
-	padding:30px;
-	background-image:url("https://mouton-numerique.org/wp-content/uploads/2014/09/fond-gris.png");
-	border: 3px #A9A9A9 solid;
-	box-shadow: 6px 6px 6px #A9A9A9 ;
-	opacity:0.8;
-}
+
+
 /*services*/
 .services{
 	margin-bottom: 75px;
@@ -141,7 +170,7 @@ form{
 /*footer*/
 footer{
 	padding: 45px;
-	background-color: #299a0b;
+	background-color: #A09696;
 	width:100%;
 	height: 150px;
 }
