@@ -116,16 +116,15 @@ h3{
 }
 
 /*article product*/
-.card{
-	margin:30px;
-	width: 300px;
 
-}
-.card-img-top{
-	background-color: grey;
-	max-height: 400px;
-
-
+.col-md-4{
+	border:grey 1px solid;
+	box-shadow: 10px 5px 5px grey;
+	width:350px;
+	height: 550px;
+	margin-right: 45px;
+	margin-bottom: 45px;
+	padding-top:10px;
 }
 
 
@@ -133,16 +132,23 @@ h3{
 .content{
 	width:100%;
 }
+.width-img{
+	width:320px;
+	height:300px;
+}
+.card-text{
+	width:300px;
+}
 .content-containers{
 	margin-top:150px;
 	background-image: url("img/robotic-nature-hands-adobestock.jpg");
+	overflow-: scroll;
 	background-repeat: no-repeat;
 	opacity:0.9;
 	width: 100%;
 	height: 500px;
 	background-size: 100%;
 	padding: 0;
-
 
 }
 .content-slogan{
@@ -153,18 +159,19 @@ h3{
 
 /*new*/
 .news{
-	
+
 	display:flex;
 	justify-content: space-around;
 }
 #contact{
-	margin-bottom:150px;
+	margin-top:60px;
+	margin-bottom:75px;
 	background-image: url("img/robot_sexy.jpg");
 	width:100%;
 	height:600px;
-	background-size:900px;
+	background-size:800px;
 	background-repeat:no-repeat;
-	background-position: 250px 100px;
+	background-position: 130px 100px;
 
 }
 
@@ -181,7 +188,7 @@ h3{
 .google{
 	margin:auto;
 	max-width: 450px;
-	max-height: 250px
+	max-height: 250px;
 }
 
 .newsletter_replik
@@ -195,7 +202,7 @@ h3{
 	display:flex;
 	justify-content: space-around;
 	flex-direction: column;
-	
+
 }
 
 .newsletter_button
@@ -217,6 +224,7 @@ footer{
 	margin:auto;
 	width:100%;
 	height: 150px;
+	bottom:0px;
 }
 .icone{
 	display: flex;
